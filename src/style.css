@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background: #252B37;
+    font-size: 1.1875rem;
+}
+
+
+/* Titulo principal */
+
+.grid {
+    display: grid;
+    grid-template-columns: 80px 1120px;
+    align-items: center;
+}
+
+
+/* 
+#grid2 {
+    margin-top: -12px;
+} */
+
+#grid1 {
+    width: 85px;
+    height: 85px;
+    z-index: 2;
+    padding: px;
+}
+
+.gridSecond {
+    display: grid;
+    margin-left: 260px;
+    margin-bottom: 60px;
+    z-index: -1;
+}
+
+h1 {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    background-color: linear-gradient(270deg, #0fffc1, rgba(197, 62, 238, 0.486));
+    background-size: 2rem 2rem;
+    animation: h1 10s ease infinite;
+}
+
+@keyframes h1 {
+    0% {
+        color: rgba(161, 84, 197, 0.486);
+    }
+    50% {
+        color: #0fffc1;
+    }
+    100% {
+        color: rgba(133, 82, 182, 0.74);
+    }
+}
+
+
+/* Main del proyecto */
+
+form {
+    position: relative;
+    width: 26vw;
+    height: 31vw;
+    background-color: #191b248a;
+    border-radius: 9%;
+    animation: textColor 10s ease infinite;
+    padding-left: 2%;
+    padding-top: 0.8rem;
+    margin-left: 37%;
+}
+
+form:after {
+    position: absolute;
+    content: "";
+    top: 5vw;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    transform: scale(0.80);
+    -webkit-filter: blur(5vw);
+    filter: blur(5vw);
+    background: linear-gradient(270deg, #0fffc1, #7e0fff);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;
+}
+
+@keyframes animateGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.label {
+    font-weight: bold;
+    font-family: 'Tomorrow', sans-serif;
+    background-color: linear-gradient(270deg, #0fffc1, rgba(106, 196, 231, 0.486));
+    background-size: 200% 200%;
+    animation: label 10s ease infinite;
+}
+
+@keyframes label {
+    0% {
+        color: rgba(161, 84, 197, 0.486);
+    }
+    50% {
+        color: #0fffc1;
+    }
+    100% {
+        color: rgba(133, 82, 182, 0.74);
+    }
+}
+
+p,
+textarea,
+input {
+    font-family: 'Tomorrow', sans-serif;
+    padding: 0.4375rem;
+    border-radius: 0.625rem;
+    border: none;
+}
+
+#textoATraducir {
+    width: 93%;
+    height: 9.375rem;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+#textoATraducir:hover {
+    color: rgb(14, 13, 13);
+    box-shadow: 0 0.25rem 1rem rgba(49, 138, 172, 1);
+    text-shadow: 0.063rem 0.063rem 0.375rem #0fffc1;
+    text-align: justify;
+}
+
+#btnCopiar {
+    width: 8.6875rem;
+    border-radius: 0.625rem;
+    height: 2.25rem;
+    color: snow;
+    background-image: linear-gradient(to bottom right, #1c2a44, #233e5e);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.3);
+}
+
+#btnCopiar img {
+    height: 0.9rem;
+}
+
+#btnCopiar:hover {
+    box-shadow: inset 0 0 1.25rem rgba(49, 138, 172, 0.5), 0 0 1.25rem rgba(49, 138, 172, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 5rem;
+    text-shadow: 0.063rem 0.063rem 0.375rem #0fffc1;
+}
+
+#shift {
+    width: 8.125rem;
+    height: 1.875rem;
+    border: none;
+}
+
+#shift:hover {
+    background-image: linear-gradient(to bottom right, #1c2a44, #233e5e);
+    box-shadow: inset 0 0 1.25rem rgba(49, 138, 172, 0.5), 0 0 1.25rem rgba(49, 138, 172, 0.4);
+    border: 0.065rem solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+#cifrando,
+#decifrando {
+    width: 16.875rem;
+    color: snow;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to bottom right, #1c2a44, #233e5e);
+    border: 0.063rem solid rgba(255, 255, 255, 0.3);
+}
+
+#cifrando:hover {
+    box-shadow: inset 0 0 1.25rem rgba(49, 138, 172, 0.5), 0 0 1.25rem rgba(49, 138, 172, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    text-shadow: 0.063rem 0.063rem 0.375rem #0fffc1;
+}
+
+#decifrando:hover {
+    box-shadow: inset 0 0 1.25rem rgba(49, 138, 172, 0.5), 0 0 1.25rem rgba(49, 138, 172, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    text-shadow: 0.063rem 0.063rem 0.375rem #0fffc1;
+}
+
+
+/* footer: el left equivale en html al texto de copyright mas icono enlace de github en el footer  */
+
+.left {
+    float: left;
+    color: rgb(247, 232, 232);
+    margin-left: 0.6rem;
+    font-size: 0.8rem;
+}
+
+.right {
+    width: 30%;
+    margin-left: 70%;
+}
+
+.right ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+.right ul li a img {
+    float: right;
+    height: 25px;
+    width: 25px;
+    margin-right: 1.438rem;
+    margin-bottom: 5px;
+}
+
+.imgRedes:hover {
+    box-shadow: inset 0 0 1.25rem rgba(61, 247, 107, 0.863), 0 0 1.25rem rgb(68, 238, 82);
+    border-radius: 50%;
+}
+
+#facebook:hover {
+    box-shadow: inset 0 0 1.25rem rgba(31, 69, 240, 0.863), 0 0 1.25rem rgb(40, 114, 252);
+    border-radius: 10%;
+}
+
+#instagram:hover {
+    box-shadow: inset 0 0 1.25rem rgba(243, 33, 226, 0.863), 0 0 1.25rem rgb(253, 25, 253);
+    border-radius: 30%;
+}
+
+#compartir {
+    margin-right: 2.1875rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+#gitHUb {
+    padding: 0;
+    height: 1.125rem;
+    width: 1.125rem;
+    margin-left: 0.188rem;
+    margin-right: 0.188rem;
+}
+
+#gitHUb:hover {
+    box-shadow: inset 0 0 1.25rem rgba(61, 247, 107, 0.863), 0 0 1.25rem rgb(68, 238, 82);
+    border-radius: 50%;
+}
+
+
+/* RESPONSIVO  */
+
+
+/* @media screen and (max-width:1920px) {
+    body {
+        font-size: 1rem;
+    }
+    #imgBotonCopiar {
+        min-width: 1.4375rem;
+        min-height: 1.4375rem;
+    }
+    h1 {
+        margin-top: 1.25rem;
+    }
+    .right {
+        padding: 0rem;
+    }
+    .right ul li a img {
+        margin-right: 0.9375rem;
+        margin-left: 0.9375rem;
+    }
+    #compartir {
+        margin-right: 1.875rem;
+        margin-top: 0.0625rem;
+        margin-bottom: 0.3125rem;
+    }
+    #cifrando,
+    #decifrando {
+        width: 92%;
+        height: 3.3125rem;
+        margin-left: 0.5625rem;
+        font-size: 1.8rem;
+    }
+    #shift {
+        width: 13.6875rem;
+        height: 3rem;
+        margin-left: 0.625rem;
+        font-size: 1.3rem;
+    }
+    #btnCopiar {
+        width: 233px;
+        height: 3rem;
+        margin-left: 0.3125rem;
+    }
+    form {
+        width: 29%;
+        margin-left: 41.875rem;
+        height: 43.75rem;
+        align-items: center;
+        margin-top: 0.3125rem;
+        padding-top: 0.625rem;
+        border-radius: 1.225rem;
+    }
+    form:after {
+        position: center;
+        margin-top: 0.75rem;
+        left: 0.5rem;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        transform: scale(1);
+        -webkit-filter: blur(5vw);
+        filter: blur(5vw);
+        background: linear-gradient(70deg, #0fffc1, #7e0fff);
+        background-size: 200% 200%;
+        animation: animateGlow 10s ease infinite;
+    }
+    .label {
+        font-size: 1.5rem;
+        margin-left: 1.75rem;
+    }
+    .left {
+        margin-left: 0.3125rem;
+        margin-top: 0.375rem;
+        font-size: 1.3rem;
+    }
+    #textoATraducir {
+        margin-top: 0.3125rem;
+        height: 24.375rem;
+        margin-left: 0.125rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    body {
+        font-size: 1rem;
+    }
+    #imgBotonCopiar {
+        min-width: 1.375rem;
+        min-height: 1.375rem;
+    }
+    h1 {
+        margin-top: 3.125rem;
+    }
+    .right ul li a img {
+        margin-top: 3.75rem;
+        margin-right: 2.9375rem;
+        margin-left: -1.5625rem;
+    }
+    #compartir {
+        margin-right: 260px;
+        margin-top: -1.75rem;
+        margin-bottom: 0.3125rem;
+    }
+    #cifrando,
+    #decifrando {
+        width: 92%;
+        height: 3.3125rem;
+        margin-left: 0.5625rem;
+        font-size: 1.8rem;
+    }
+    #shift {
+        width: 12.5rem;
+        height: 3rem;
+        margin-left: 0.625rem;
+        font-size: 1.3rem;
+    }
+    #btnCopiar {
+        width: 214px;
+        height: 3rem;
+        margin-left: 0.3125rem;
+    }
+    form {
+        width: 40%;
+        margin-left: 345px;
+        height: 520px;
+        align-items: center;
+        margin-top: 0.9375rem;
+        padding-top: 0.625rem;
+        border-radius: 1.125rem;
+    }
+    form:after {
+        position: center;
+        margin-top: 0.75rem;
+        left: 0.5rem;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        transform: scale(1);
+        -webkit-filter: blur(5vw);
+        filter: blur(5vw);
+        background: linear-gradient(70deg, #0fffc1, #7e0fff);
+        background-size: 200% 200%;
+        animation: animateGlow 10s ease infinite;
+    }
+    .label {
+        font-size: 1.5rem;
+        margin-left: 1.75rem;
+    }
+    .left {
+        margin-left: 0.3125rem;
+        margin-top: 4.375rem;
+        font-size: 1rem;
+    }
+    #textoATraducir {
+        margin-top: 0.3125rem;
+        height: 12.5rem;
+        margin-left: 0.625rem;
+        font-size: 1.125rem;
+    }
+}  */
+
+@media screen and (max-width:800px) {
+    body {
+        font-size: 0.8rem;
+    }
+    #imgBotonCopiar {
+        min-width: 2.1875rem;
+        min-height: 2.0625rem;
+    }
+    h1 {
+        margin-top: 3.125rem;
+    }
+    .right {
+        padding: 0rem;
+    }
+    .right ul li a img {
+        margin-top: 4.6875rem;
+        margin-right: 0.38rem;
+        margin-left: 0.3125rem;
+    }
+    #compartir {
+        margin-right: 11.25rem;
+        margin-top: -1.75rem;
+        margin-bottom: 0.3125rem;
+    }
+    #cifrando,
+    #decifrando {
+        width: 92%;
+        height: 3.3125rem;
+        margin-left: 0.5625rem;
+    }
+    #shift {
+        width: 12.3125rem;
+        height: 3rem;
+        margin-left: 0.75rem;
+        padding: 0%;
+        padding-left: 0.5625rem;
+    }
+    #btnCopiar {
+        width: 12.375rem;
+        height: 3.125rem;
+    }
+    form {
+        width: 59%;
+        margin-left: 10rem;
+        height: 37.5rem;
+        align-items: center;
+        margin-top: 0.9375rem;
+        padding-top: 0.625rem;
+        border-radius: 1.125rem;
+    }
+    form:after {
+        position: center;
+        margin-top: 0.75rem;
+        left: 0.5rem;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        transform: scale(1);
+        -webkit-filter: blur(5vw);
+        filter: blur(5vw);
+        background: linear-gradient(70deg, #0fffc1, #7e0fff);
+        background-size: 200% 200%;
+        animation: animateGlow 10s ease infinite;
+    }
+    .label {
+        font-size: 1.4375rem;
+        margin-left: 1.75rem;
+    }
+    .left {
+        margin-left: 0.3125rem;
+        margin-top: 4.6875rem;
+        font-size: 1rem;
+    }
+    #textoATraducir {
+        margin-top: 0.3125rem;
+        height: 18.75rem;
+        margin-left: 0.625rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    body {
+        font-size: 0.5rem;
+    }
+    #imgBotonCopiar {
+        min-width: 1rem;
+        min-height: 0.9375rem;
+    }
+    h1 {
+        margin-top: 3.75rem;
+    }
+    .right {
+        padding: 0rem;
+    }
+    .right ul li a img {
+        margin-top: 7.9375rem;
+        margin-right: 0.38rem;
+        margin-left: 0.0625rem;
+    }
+    #compartir {
+        margin-right: 10rem;
+        margin-top: -1.75rem;
+        margin-bottom: 0.125rem;
+    }
+    #cifrando,
+    #decifrando {
+        width: 92%;
+        height: 2.375rem;
+        margin-left: 0.5625rem;
+        font-size: 1.3rem;
+    }
+    #shift {
+        width: 9.3125rem;
+        height: 2.375rem;
+        margin-left: 0.625rem;
+    }
+    #btnCopiar {
+        width: 9.0625rem;
+        height: 2.5rem;
+        margin-left: 0.3125rem;
+    }
+    form {
+        width: 73%;
+        margin-left: 5rem;
+        height: 31.25rem;
+        align-items: center;
+        margin-top: 3.125rem;
+        padding-top: 0.625rem;
+        border-radius: 1.125rem;
+    }
+    form:after {
+        position: center;
+        margin-top: 0.75rem;
+        left: 0.5rem;
+        right: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        transform: scale(1);
+        -webkit-filter: blur(5vw);
+        filter: blur(5vw);
+        background: linear-gradient(70deg, #0fffc1, #7e0fff);
+        background-size: 200% 200%;
+        animation: animateGlow 10s ease infinite;
+    }
+    .label {
+        font-size: 1.125rem;
+        margin-left: 1.75rem;
+    }
+    .left {
+        margin-left: 0.3125rem;
+        margin-top: 7.5rem;
+        font-size: 0.7rem;
+    }
+    #textoATraducir {
+        margin-top: 0.3125rem;
+        height: 15.625rem;
+        margin-left: 0.625rem;
+        font-size: 0.9rem
+    }
+}
