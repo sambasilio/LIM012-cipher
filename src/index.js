@@ -6,6 +6,20 @@ let textoATraducir = document.getElementById("textoATraducir");
 let shift = document.getElementById("shift");
 document.getElementById("btnCopiar").accessKey = "1";
 
+shift.addEventListener("keyup", function(e) {
+
+    var key = e.keyCode || e.charCode;
+
+    // si la tecla es un cero y el primer carácter es un cero
+    if (key == 48 && this.value[0] == "0") {
+        // se eliminan los ceros delanteros
+        this.value = this.value.replace(/^0+/, '');
+    }
+
+});
+
+
+
 //EL PREVENT DEFAULT para que ahora si no permita escribir caracteres que no sean de tipo número o negativos por teclado
 //funcion para permitir que NO se teclee letras u otro caracter gracias al prevente default
 shift.addEventListener("keypress", (Negativo) => {
@@ -54,5 +68,4 @@ document.getElementById("btnCopiar").addEventListener("click", () => {
 });
 
 
-
-//funcion para eni  null y corchetes
+/*averiguar poner el cursor en una posicion*/

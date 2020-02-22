@@ -14,67 +14,61 @@
 </head>
 
 <body>
-    <div class="grid">
-        <div class="gridSecond">
-            <img src="./assets/sobreTransparente.png" id="grid1" alt="">
-        </div>
-        <h1 id="grid2">Mensaje Secreto.com</h1>
-    </div>
+    <div class="contenedor">
+        <div class="log">
 
-    <form>
-        <label class="label">Mensaje:</label>
-        <p><textarea rows="10" cols="40" id="textoATraducir" placeholder="    Instrucciones: 
+            <h1>Mensaje Secreto.com</h1>
+        </div>
+        <form class="form">
+            <label class="label">Mensaje:</label>
+            <p><textarea rows="12" cols="40" id="textoATraducir" placeholder="   
+               Instrucciones: 
 
     1. Escribe un mensaje aquí... ✏️
     2. Elige un número de desplazamiento 
     3. Elige cifrar o descifrar
     3. Copia tu mensaje 😀
-    4. Y compártenos en tus redes sociales!." spellcheck="false"></textarea></p>
-        <label class="label">Desplaza:</label>
-        <p><input type="number" min="1" id="shift" value="13">
-            <button id="btnCopiar"><img src="./assets/iconfinder_Copy_1493280.png" id="imgBotonCopiar"></button></p>
-        <p><input type="button" value="Cifrar" id="cifrando"></p>
-        <p><input type="button" value="Descifrar" id="decifrando"></p>
-    </form>
-</body>
-<footer>
-    <div class="container">
-        <div class="left">
+    4. Y compártenos en tus redes!." spellcheck="false"></textarea></p>
+            <label class="label">Desplaza:</label>
+            <div class="subForm">
+                <input type="number" min="1" id="shift" value="13">
+                <button id="btnCopiar"><img src="./assets/iconfinder_Copy_1493280.png" id="imgBotonCopiar"></button>
+                <input type="button" value="Cifrar" id="cifrando">
+                <input type="button" value="Descifrar" id="decifrando">
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="right">
             <p>&copy; 2020
                 <a href="https://github.com/yeniferPaloma" class="nav-link" target="_blank"><img src="./assets/iconfinder_Github_381376.png" id="gitHUb"></a> | Todos los Derechos Reservados</p>
         </div>
-        <div class="center"></div>
-        <div class="right">
-            <ul>
-                <li class="nav-item">
-                    <a href="https:/facebook.com" class="nav-link" target="_blank">
-                        <img src="./assets/iconfinder_Colored_Facebook3_svg_5365678.png" id="facebook">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://twitter.com" class="nav-link" target="_blank">
-                        <img src="./assets/iconfinder_4_940956.png" class="imgRedes">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://www.instagram.com/palomaenoki" class="nav-link" target="_blank">
-                        <img src="./assets/iconfinder_1_Instagram_colored_svg_1_5296765.png" id="instagram">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link" target="_blank">
-                        <img src="./assets/iconfinder_WhatsApp_1298775.png" alt="" class="imgRedes">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">
-                        <img src="./assets/iconfinder_share_353438.png" id="compartir" class="animated wobble">
-                    </a>
-                </li>
-            </ul>
+        <div class="left">
+            <a href="#">
+                <img src="./assets/iconfinder_share_353438.png" id="compartir" class="animated wobble">
+            </a>
+
+            <a href="https:/facebook.com" class="nav-link" target="_blank">
+                <img src="./assets/iconfinder_Colored_Facebook3_svg_5365678.png" id="facebook">
+            </a>
+
+            <a href="https://twitter.com" class="nav-link" target="_blank">
+                <img src="./assets/iconfinder_4_940956.png" class="imgRedes">
+            </a>
+
+            <a href="https://www.instagram.com/palomaenoki" class="nav-link" target="_blank">
+                <img src="./assets/iconfinder_1_Instagram_colored_svg_1_5296765.png" id="instagram">
+            </a>
+
+            <a href="" class="nav-link" target="_blank">
+                <img src="./assets/iconfinder_WhatsApp_1298775.png" alt="" class="imgRedes">
+            </a>
+
         </div>
-    </div>
-</footer>
+
+    </footer>
+</body>
+
 <script type="module" src="./index.js"></script>
 
 </html>
