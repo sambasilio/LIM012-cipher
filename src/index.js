@@ -14,15 +14,15 @@ shift.addEventListener("keyup", function(e) {
     if (key == 48 && this.value[0] == "0") {
         // se eliminan los ceros delanteros
         this.value = this.value.replace(/^0+/, '');
+    } else if (key == 45 && this.value[0] == "-") {
+        this.value = this.value.replace(/^-+/, '');
     }
 
 });
 
-
-
 //EL PREVENT DEFAULT para que ahora si no permita escribir caracteres que no sean de tipo número o negativos por teclado
 //funcion para permitir que NO se teclee letras u otro caracter gracias al prevente default
-shift.addEventListener("touchstart touch", (Negativo) => {
+shift.addEventListener("click", (Negativo) => {
         if (!soloNumeros(event)) {
             Negativo.preventDefault();
         }
