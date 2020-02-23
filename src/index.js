@@ -21,7 +21,6 @@ shift.addEventListener('keydown', (evento) => {
         teclaPresionada != 'Backspace' &&
         teclaPresionada != 'Delete' &&
         teclaPresionada != 'Enter' &&
-        teclaPresionada === '-' &&
         !teclaPresionadaEsUnNumero;
     const siComienzaPorCero = shift.value.length === 0 && teclaPresionada == 0;
 
