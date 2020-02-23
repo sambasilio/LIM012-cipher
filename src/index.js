@@ -26,7 +26,7 @@ shift.addEventListener('keydown', (evento) => {
     const siComienzaPorCero = shift.value.length === 0 && teclaPresionada == 0;
 
     if (sePresionoUnaTeclaNoAdmitida || siComienzaPorCero) {
-        evento.preventDefault();
+        evento.preventDefault(); //no ocurrirá.
     }
 
 });
