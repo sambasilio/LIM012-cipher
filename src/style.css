@@ -122,11 +122,12 @@ form:after {
 
 #textoATraducir {
     width: 96%;
-    font-size: 0.95rem;
     margin: 2% 0% 0% 3%;
     text-align: justify;
+    font-size: 0.7625rem;
     padding: 2% 0% 0% 2%;
     border-radius: 0.625rem;
+    font-family: 'Tomorrow', sans-serif;
 }
 
 #textoATraducir:hover {
