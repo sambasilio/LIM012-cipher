@@ -1,4 +1,3 @@
-// cifra y decifra numeros tambien 
 const cipher = {
     encode: (offset, string) => {
 
