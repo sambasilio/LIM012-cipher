@@ -22,7 +22,7 @@ shift.addEventListener("keyup", function(e) {
 
 //EL PREVENT DEFAULT para que ahora si no permita escribir caracteres que no sean de tipo número o negativos por teclado
 //funcion para permitir que NO se teclee letras u otro caracter gracias al prevente default
-shift.addEventListener("click touch", (Negativo) => {
+shift.addEventListener("touchstart touch", (Negativo) => {
         if (!soloNumeros(event)) {
             Negativo.preventDefault();
         }
