@@ -6,30 +6,25 @@ let textoATraducir = document.getElementById("textoATraducir");
 let shift = document.getElementById("shift");
 document.getElementById("btnCopiar").accessKey = "1";
 
-shift.addEventListener("keyup", function(e) {
+shift.addEventListener('keydown', function(evento) {
+    const teclaPresionada = evento.key;
+    const teclaPresionadaEsUnNumero = Number.isInteger(parseInt(teclaPresionada));
+    const sePresionoUnaTeclaNoAdmitida =
+        teclaPresionada != 'ArrowDown' &&
+        teclaPresionada != 'ArrowUp' &&
+        teclaPresionada != 'ArrowLeft' &&
+        teclaPresionada != 'ArrowRight' &&
+        teclaPresionada != 'Backspace' &&
+        teclaPresionada != 'Delete' &&
+        teclaPresionada != 'Enter' &&
+        !teclaPresionadaEsUnNumero;
+    const comienzaPorCero = shift.value.length === 0 && teclaPresionada == 0;
 
-    var key = e.keyCode || e.charCode;
-
-    // si la tecla es un cero y el primer carácter es un cero
-    if (key == 48 && this.value[0] == "0") {
-        // se eliminan los ceros delanteros
-        this.value = this.value.replace(/^0+/, '');
+    if (sePresionoUnaTeclaNoAdmitida || comienzaPorCero) {
+        evento.preventDefault();
     }
 
 });
-
-//EL PREVENT DEFAULT para que ahora si no permita escribir caracteres que no sean de tipo número o negativos por teclado
-//funcion para permitir que NO se teclee letras u otro caracter gracias al prevente default
-shift.addEventListener("click", (Negativo) => {
-        if (!soloNumeros(event)) {
-            Negativo.preventDefault();
-        }
-    })
-    // Funcion que solo permite introducir numeros y definimos segun codigo ASCII cuales
-let soloNumeros = (Negativo) => {
-    var key = Negativo.charCode;
-    return key >= 43 && key <= 57;
-};
 
 
 cifrar.addEventListener("click", () => {
