@@ -14,7 +14,7 @@ shift.addEventListener("keyup", function(e) {
     if (key == 48 && this.value[0] == "0") {
         // se eliminan los ceros delanteros
         this.value = this.value.replace(/^0+/, '');
-    } else if (key == 45 && this.value[0] == "-") {
+    } else if (key == 45 && this.value['-'] == "-") {
         this.value = this.value.replace(/^-+/, '');
     }
 
