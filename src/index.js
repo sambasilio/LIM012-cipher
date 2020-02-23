@@ -14,8 +14,6 @@ shift.addEventListener("keyup", function(e) {
     if (key == 48 && this.value[0] == "0") {
         // se eliminan los ceros delanteros
         this.value = this.value.replace(/^0+/, '');
-    } else if (key == 45 && this.value['-'] == "-") {
-        this.value = this.value.replace(/^-+/, '');
     }
 
 });
@@ -30,7 +28,7 @@ shift.addEventListener("click", (Negativo) => {
     // Funcion que solo permite introducir numeros y definimos segun codigo ASCII cuales
 let soloNumeros = (Negativo) => {
     var key = Negativo.charCode;
-    return key >= 48 && key <= 57;
+    return key >= 43 && key <= 57;
 };
 
 
