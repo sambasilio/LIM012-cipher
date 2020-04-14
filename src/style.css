@@ -218,6 +218,7 @@ footer {
     width: 1.125rem;
     height: 1.125rem;
     margin: 0rem 0.188rem 0rem 0.188rem;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #gitHUb:hover {
@@ -238,6 +239,7 @@ footer {
     height: 1.75rem;
     margin-right: 3%;
     text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .imgRedes:hover {
