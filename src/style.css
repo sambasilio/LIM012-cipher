@@ -201,6 +201,7 @@ input {
 
 footer {
     display: flex;
+    margin-top: 100px;
     min-width: 95%;
 }
 
@@ -288,8 +289,9 @@ footer {
 
 @media (max-width:576px) {
     footer {
-        flex-direction: column-reverse;
+        margin-top: 0;
         align-items: center;
+        flex-direction: column-reverse;
     }
     .right p {
         padding: 2rem 0;
@@ -299,5 +301,11 @@ footer {
         width: 100%;
         justify-content: space-evenly;
         margin: 2rem 0 0.4rem 0;
+    }
+    main {
+        margin: 0 0.5rem;
+    }
+    header h1 {
+        font-size: 25px;
     }
 }
