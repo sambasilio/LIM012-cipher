@@ -3,68 +3,63 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MensajeSecreto.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="icon" type="image/png" href="./assets/iconfinder_secret_mail_email_envelope_66345.png" />
     <link href="https://fonts.googleapis.com/css?family=Tomorrow:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Tomorrow:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="all">
+    <title>MensajeSecreto.com</title>
 </head>
 
 <body>
-    <div class="contenedor">
-        <div class="log">
-            <h1>Mensaje Secreto.com</h1>
-        </div>
-        <form class="form">
-            <label class="label">Mensaje:</label>
-            <p><textarea rows="12" cols="40" id="textoATraducir" placeholder="             
+    <header>
+        <h1>Mensaje Secreto.com</h1>
+    </header>
+    <main>
+        <form>
+            <label>Mensaje:</label>
+            <textarea id="textoATraducir" rows="12" cols="40" placeholder="             
                              Instrucciones: 
 
                   1. Escribe un mensaje aquí... ✏️
                   2. Elige un desplazamiento 
                   3. Elige cifrar o descifrar
                   4. Copia tu mensaje 😀
-                  5. Y compártenos en tus redes!." spellcheck="false"></textarea></p>
-            <label class="label">Desplaza:</label>
-            <div class="subForm">
+                  5. Y compártenos en tus redes!." spellcheck="false"></textarea>
+            <div class="alert"><span id="alertText"></span></div>
+            <label>Desplaza:</label>
+            <section class="subForm">
                 <input type="number" min="1" id="shift" value="13">
                 <button id="btnCopiar"><img src="./assets/iconfinder_Copy_1493280.png" id="imgBotonCopiar"></button>
-                <input type="button" value="Cifrar" id="cifrando">
-                <input type="button" value="Descifrar" id="decifrando">
-            </div>
+                <button id="cifrando">Cifrar</button>
+                <button id="decifrando">Descifrar</button>
+            </section>
         </form>
-    </div>
-    <footer class="footer">
-        <div class="right">
-            <p>&copy; 2020
+    </main>
+    <footer>
+        <section class="right">
+            <p>&copy; <span id="year"></span>
                 <a href="https://github.com/yeniferPaloma" class="nav-link" target="_blank"><img src="./assets/iconfinder_Github_381376.png" id="gitHUb"></a> | Todos los Derechos Reservados</p>
-        </div>
-        <div class="left">
+        </section>
+        <section class="left">
             <a href="#">
                 <img src="./assets/iconfinder_share_353438.png" id="compartir" class="animated wobble">
             </a>
-
             <a href="https:/facebook.com" class="nav-link" target="_blank">
                 <img src="./assets/iconfinder_Colored_Facebook3_svg_5365678.png" id="facebook">
             </a>
-
             <a href="https://twitter.com" class="nav-link" target="_blank">
                 <img src="./assets/iconfinder_4_940956.png" class="imgRedes">
             </a>
-
             <a href="https://www.instagram.com/palomaenoki" class="nav-link" target="_blank">
                 <img src="./assets/iconfinder_1_Instagram_colored_svg_1_5296765.png" id="instagram">
             </a>
-
             <a href="" class="nav-link" target="_blank">
                 <img src="./assets/iconfinder_WhatsApp_1298775.png" alt="" class="imgRedes">
             </a>
-
-        </div>
-
+        </section>
     </footer>
 </body>
 
