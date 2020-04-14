@@ -61,7 +61,7 @@ form {
     padding: 1rem;
     margin-top: 3%;
     position: relative;
-    border-radius: 1.25rem;
+    border-radius: 0.625rem;
     background-color: #191b248a;
 }
 
@@ -289,7 +289,7 @@ footer {
 
 @media (max-width:576px) {
     footer {
-        margin-top: 0;
+        margin-top: 6px;
         align-items: center;
         flex-direction: column-reverse;
     }
